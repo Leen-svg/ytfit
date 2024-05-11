@@ -1,0 +1,113 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Use a modern, sans-serif font and set basic background and text colors */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern and clean font fallback */
+    background-color: #ffffff; /* Pure white background */
+    color: #000000; /* Pure black text */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Style the header with a pure black background and white text, rounded corners */
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 0 0 12px 12px; /* Rounded bottom corners */
+}
+
+/* Main content area styling */
+main {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px; /* Soft rounded corners for the main container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+/* Footer with fixed positioning at the bottom, black background, and white text */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000000;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 12px 12px 0 0; /* Rounded top corners */
+}
+
+/* Styling for tables used to display video entries */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 8px 8px 0 0; /* Rounded corners at the top of table headers */
+}
+
+tr:nth-child(even) {
+    background-color: #f8f8f8; /* Light gray for alternating rows */
+}
+
+/* Form styling for a cohesive look */
+form {
+    margin-top: 20px;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="url"],
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #000000;
+}
+
+/* Buttons styled with a modern rounded look and hover effects */
+button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #333333; /* Dark gray on hover for better interaction feedback */
+    color: #ffffff;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Plan App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Youtube Fitness Planner</h1>
+    </header>
+    <main>
+        <section id="videoForm">
+            <form>
+                <label for="weekSelector">Choose a week:</label>
+                <select id="weekSelector">
+                    <option value="1">Week 1</option>
+                    <option value="2">Week 2</option>
+                    <option value="3">Week 3</option>
+                    <option value="4">Week 4</option>
+                </select>
+                <label for="videoTitle">Video Title:</label>
+                <input type="text" id="videoTitle" placeholder="Enter video title" required>
+                <label for="videoUrl">YouTube URL:</label>
+                <input type="url" id="videoUrl" placeholder="Enter YouTube URL" required>
+                <button type="button" id="addVideo">Add Video</button>
+            </form>
+        </section>
+        <section id="videoList">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>URL</th>
+                        <th>Completed</th>
+                    </tr>
+                </thead>
+                <tbody id="videoTableBody">
+                    <!-- Videos will be added here dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Fitness Plan Tracker</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
